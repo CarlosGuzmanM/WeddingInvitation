@@ -66,7 +66,7 @@
 
     /* #2 Cuenta regresiva */
     .countdown{display:flex; gap:16px; flex-wrap:wrap}
-    .cd-item{flex:1 1 120px; text-align:center; padding:14px 12px; border-radius:16px; border:1px solid rgba(255,255,255,.14)}
+    .cd-item{flex:1 1 120px; text-align:center; padding:7px 6px; border-radius:16px; border:0px }
     .cd-num{font-size:32px}
     .cd-label{opacity:.8; font-size:14px}
 
@@ -120,6 +120,7 @@
     /* Separadores elegantes */
     .divider{height:1px; background:linear-gradient(90deg, transparent, rgba(255,255,255,.25), transparent); margin:28px 0}
     .accent{color:var(--dorado)}
+    .cursive{font-style: italic;}
 
     /* Alternar fondos sutiles para ritmo visual */
     .on-white{background:#f5f5f5; color:#141414}
@@ -137,8 +138,8 @@
     <ul class="menu-list">
       <!-- Importante: la portada NO aparece en esta lista -->
       <li><a href="#cuenta">Cuenta regresiva</a></li>
-      <li><a href="#padres">Nombre de los padres</a></li>
-      <li><a href="#novios">Novios & Frase</a></li>
+      <li><a href="#padres">Nuestros padres</a></li>
+      <li><a href="#novios">Nosotros</a></li>
       <li><a href="#itinerario">Itinerario</a></li>
       <li><a href="#dress">Dress code</a></li>
       <li><a href="#maquillaje">Sugerencia de maquillaje</a></li>
@@ -146,7 +147,7 @@
       <li><a href="#gastronomia">Gastronomía</a></li>
       <li><a href="#turismo">Turismo</a></li>
       <li><a href="#hoteles">Hoteles</a></li>
-      <li><a href="#mapa">Mapa del venue</a></li>
+      <li><a href="#mapa">Ubicación</a></li>
       <li><a href="#rsvp">Confirmación</a></li>
     </ul>
   </nav>
@@ -168,15 +169,15 @@
   <!-- 2) CUENTA REGRESIVA -->
   <section id="cuenta">
     <div class="container">
-      <h2 class="title">¡El momento ha llegado!, nos emociona compartir este día contigo</h2>
-      
+      <h2 class="title">¡El momento ha llegado!</h2>
+      <p class="subtitle">Andrea me ha hecho el hombre más feliz del mundo diciendo que sí, ahora estamos preparados para unir nuestras vidas y nos emociona muchísimo que seas parte de esto.</p>
+      <p class="subtitle">¡Nos vemos muy pronto en <span class="accent">Luxury Garden</span>, Tuxtla Gutiérrez!</p>
       <div class="countdown" id="countdown">
         <div class="cd-item card"><div class="cd-num" id="cd-dias">–</div><div class="cd-label">Días</div></div>
         <div class="cd-item card"><div class="cd-num" id="cd-horas">–</div><div class="cd-label">Horas</div></div>
         <div class="cd-item card"><div class="cd-num" id="cd-min">–</div><div class="cd-label">Minutos</div></div>
         <div class="cd-item card"><div class="cd-num" id="cd-sec">–</div><div class="cd-label">Segundos</div></div>
       </div>
-      <p class="subtitle">¡Nos vemos muy pronto en <span class="accent">Luxury Garden</span>, Tuxtla Gutiérrez!</p>
     </div>
   </section>
 
@@ -203,7 +204,7 @@
   <section id="novios">
     <div class="container">
       <h2 class="title">Andrea & Carlos</h2>
-      <p class="subtitle">“Lo nuestro es un <span class="accent">sí</span> para siempre.”</p>
+      <p class="subtitle"><span class="cursive">“Crecer y el paso del tiempo siempre fueron mis mayores temores hasta que te conocí; ahora en lo único que pienso es en crecer contigo, en compartir la vida a tu lado, en seguir creando maravillosos recuerdos juntos y vivir por el resto de nuestras, nuestra mágica historia de amor. ¡Gracias por permitirme pasar el resto de nuestras vidas juntos!, te amo con todo lo que soy” </span><span class="accent">- Carlos</span></p>
       <div class="carousel" id="carousel">
         <div class="slides">
           <!-- Sustituye las imágenes por tus fotos (ligeramente desenfocadas por filtro) -->
@@ -245,10 +246,10 @@
       <p class="subtitle">Etiqueta <span class="accent">(Black Tie)</span></p>
       <div class="list cols-3">
         <div class="icon-item"><img class="icon" src="assets/icons/smoking.svg" alt="Etiqueta">
-          <div><strong>Caballeros:</strong> Traje oscuro o esmoquin, corbata/bowtie sobrios.</div>
+          <div><strong>Caballeros:</strong> Traje oscuro o esmoquin, corbata/moño.</div>
         </div>
         <div class="icon-item"><img class="icon" src="assets/icons/dress.svg" alt="Vestido largo">
-          <div><strong>Damas:</strong> Vestido largo o cóctel elegante. Paleta negro, blanco, verde oscuro.</div>
+          <div><strong>Damas:</strong> Vestido largo o cóctel elegante.</div>
         </div>
         <div class="icon-item"><img class="icon" src="assets/icons/no-photo.svg" alt="Smoking">
           <div><strong>Evitar:</strong> Blanco total, jeans, tenis deportivos.</div>
@@ -264,19 +265,19 @@
       <p class="subtitle">Referencias clásicas, glow sutil y delineado elegante.</p>
       <div class="list cols-3">
         <div class="item">
-          <h4>Studio Élite</h4>
-          <p>Makeup & Hair • Paquetes para invitadas</p>
-          <span class="tag">Tuxtla Gutiérrez</span>
+          <h4>Kath Redding</h4>
+          <p>Estudio de maquillaje, peinado y cejas</p>
+          <a span class="tag" href="https://www.instagram.com/kathredding.mua">Instagram</span></a>
         </div>
         <div class="item">
-          <h4>Beauty House</h4>
-          <p>Maquillaje social • Peinado glam</p>
-          <span class="tag">Chiapas</span>
+          <h4>Pathy Rosas Make up</h4>
+          <p>Estudio de maquillaje y peinado</p>
+          <a span class="tag" href="https://www.instagram.com/pathyrosasmakeup">Instagram</span></a>
         </div>
         <div class="item">
-          <h4>Glow Artistry</h4>
-          <p>Piel luminosa • Ojos definidos</p>
-          <span class="tag">A domicilio</span>
+          <h4>Valeria Maza</h4>
+          <p>Make up artist, maquillaje aerográfico, peinado, brow lamination y lashlifting</p>
+          <a span class="tag" href="https://www.instagram.com/valeriamazamakeupartist">Instagram</span></a>
         </div>
       </div>
     </div>
