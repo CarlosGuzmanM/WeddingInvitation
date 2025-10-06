@@ -42,7 +42,7 @@
 
     .menu-panel{
       position:fixed; top:56px; left:0; right:0; height:0; overflow:hidden;
-      background:var(--negro); transition:height .35s ease; z-index:8999;
+      background:var(--verdebg); transition:height .35s ease; z-index:8999;
       border-bottom:1px solid rgba(255,255,255,.08);
     }
     .menu-panel.open{height:100vh}
@@ -473,10 +473,6 @@
       <p class="subtitle">Agradecemos confirmar antes del <strong>25 de octubre de 2025</strong>.</p>
       <form class="rsvp" onsubmit="return handleRSVP(event)">
         <div class="field">
-          <label for="nombre">Nombre completo</label>
-          <input id="nombre" name="nombre" required />
-        </div>
-        <div class="field">
           <label for="invitados">Número de acompañantes</label>
           <select id="invitados" name="invitados">
             <option>0</option><option>1</option><option>2</option><option>3+</option>
@@ -491,7 +487,7 @@
         </div>
         <div class="field">
           <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" placeholder="¿Alguna restricción alimentaria o nota?, Por favor haznos saber si todos tus acompañantes asistirán"></textarea>
+          <textarea id="mensaje" name="mensaje" placeholder="¿Alguna restricción alimentaria o nota?"></textarea>
         </div>
         <button class="cta" type="submit">Enviar confirmación</button>
       </form>
