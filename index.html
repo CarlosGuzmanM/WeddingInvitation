@@ -6,6 +6,8 @@
   <title>Andrea & Carlos — 6 de diciembre de 2025</title>
   <meta name="description" content="Invitación de boda — Andrea & Carlos — 6 de diciembre de 2025 — Luxury Garden, Tuxtla Gutiérrez, Chiapas, MX" />
 
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
   <!-- Tipografía y paleta estilo Succession / Casino Royale -->
   <style>
     :root{
@@ -14,22 +16,24 @@
       --verde:#005c2f; /* verde oscuro solicitado */
       --dorado: #c7b179; /* toque sutil de lujo para detalles */
       --maxw:1100px;
+      --verdebg: #0c240e;
+      --paper-img: url('assets/background/paper.png');
     }
 
     html{scroll-behavior:smooth}
     body{
-      margin:0; background:var(--negro); color:var(--blanco);
-      font-family: 'Times New Roman', Times, serif; line-height:1.5;
+      margin:0; background:var(--verdebg); color:var(--blanco);
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; line-height:1.5;
     }
 
     /* Barra superior colapsable */
     .topbar{
-      position:fixed; inset:0 0 auto 0; height:56px; background:var(--negro);
+      position:fixed; inset:0 0 auto 0; height:56px; background:var(--verdebg);
       display:flex; align-items:center; justify-content:space-between;
-      padding:0 16px; z-index:9000; border-bottom:1px solid rgba(255,255,255,.08);
+      padding:0 16px; z-index:9000; border-bottom:1px solid rgba(255,255,255,.08); font-family: 'Times New Roman', Times, serif;
     }
     .brand{letter-spacing:2px; font-size:14px; color:var(--blanco); opacity:.85}
-    .hamburger{margin-left:auto; display:inline-flex; width:36px; height:36px; align-items:center; justify-content:center; cursor:pointer; border:1px solid rgba(255,255,255,.18); border-radius:8px}
+    .hamburger{margin-left:auto; display:inline-flex; width:36px; height:36px; align-items:center; justify-content:center; cursor:pointer; border:1px solid rgba(255,255,255,.18); border-radius:8px; background:var(--verdebg);}
     .hamburger:focus{outline:2px solid var(--verde)}
     .hamburger i{position:relative; width:18px; height:2px; background:var(--blanco); display:block}
     .hamburger i::before,.hamburger i::after{content:""; position:absolute; left:0; right:0; height:2px; background:var(--blanco)}
@@ -48,27 +52,27 @@
     /* Estructura secciones */
     section{padding:88px 16px; position:relative}
     .container{max-width:var(--maxw); margin:0 auto}
-    .title{font-size:34px; letter-spacing:1px; margin:0 0 12px}
-    .subtitle{opacity:.85; margin:0 0 24px; font-size:18px}
+    .title{font-size:40px; letter-spacing:1px; margin:0 0 12px; font-family: "Great Vibes", cursive; }
+    .subtitle{opacity:.85; margin:0 0 24px; font-size:16px;}
 
     /* #1 Portada */
     .hero{min-height:65vh; display:grid; place-items:center; color:var(--blanco); padding-top:56px}
     .hero-bg{position:absolute; inset:0; background:url('assets/images/portada.jpg') center/cover no-repeat; filter:blur(.3px) brightness(.6)}
     .hero-overlay{position:relative; text-align:center; padding-top: 250px;}
-    .names{font-size: clamp(36px, 6vw, 72px); letter-spacing:3px; font-weight:normal}
-    .date{font-size: clamp(18px, 2.5vw, 26px); letter-spacing:1px; color:#e7e7e7}
-    .chip{display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border:2px solid rgba(255,255,255,.2); border-radius:999px; color:#dfe7e3}
+    .names{font-size: clamp(36px, 6vw, 72px); letter-spacing:3px; font-weight:normal; font-family: 'Times New Roman', Times, serif;}
+    .date{font-size: clamp(18px, 2.5vw, 26px); letter-spacing:1px; color:#e7e7e7; font-family: 'Times New Roman', Times, serif;}
+    .chip{display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border:2px solid rgba(255,255,255,.2); border-radius:999px; color:#dfe7e3; font-family: 'Times New Roman', Times, serif;}
 
     /* Tarjetas y bloques elegantes */
-    .card{background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.12); border-radius:18px; padding:22px}
+    .card{background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.12); border-radius:4px; padding:22px; box-shadow: 0 12px 25px rgba(0,0,0,0.25);}
     .grid{display:grid; gap:16px}
     @media(min-width:800px){.grid.cols-2{grid-template-columns:1fr 1fr}}
 
     /* #2 Cuenta regresiva */
     .countdown{display:flex; gap:16px; flex-wrap:wrap}
     .cd-item{flex:1 1 60px; text-align:center; padding:7px 6px; border-radius:16px; border:0px; background: transparent;}
-    .cd-num{font-size:32px}
-    .cd-label{opacity:.8; font-size:14px}
+    .cd-num{font-size:32px; font-family: 'Times New Roman', Times, serif;}
+    .cd-label{opacity:.8; font-size:14px; font-family: "Great Vibes", cursive;}
 
     /* #4 Carrusel (nombres + frase de amor) */
     .carousel{position:relative; overflow:hidden; border-radius:18px; border:1px solid rgba(255,255,255,.14)}
@@ -83,7 +87,7 @@
     /* Iconos genéricos reemplazables por path */
     .icon{width:28px; height:28px; object-fit:contain; filter:invert(1)}
     .icon-row{display:flex; gap:16px; flex-wrap:wrap}
-    .icon-item{display:flex;gap:12px;align-items:flex-start;padding:.8rem;border:1px solid rgba(255,255,255,.12);border-radius:12px}
+    .icon-item{display:flex;gap:12px;align-items:flex-start;padding:.8rem;border:1px solid rgba(255,255,255,.25);border-radius:5px; background-color: #102f13; box-shadow: 0 12px 25px rgba(255,255,255,0.05)}
     .icon-item img{width:28px;height:28px;object-fit:contain;filter:grayscale(100%) brightness(220%)}
 
     /* Listas de opciones (maquillistas, hoteles, restaurantes, etc.) */
@@ -92,9 +96,19 @@
     @media(min-width:620px){.list.cols-2{grid-template-columns:repeat(2,1fr)}}
     .item{background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.12); border-radius:14px; padding:14px}
     .item h4{margin:0 0 8px}
-    .tag{display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; border:1px solid rgba(255,255,255,.2); opacity:.9}
+    .tag{display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; border:1px solid rgba(255,255,255,1); opacity:1}
 
     /* #10 Turismo — carrusel de tarjetas */
+
+    .opt-carousel{position: relative;}
+    .opt-photo{height:140px; background:#111 center/cover no-repeat}
+    .opt-track{display:flex; gap: 16px; overflow: hidden;}
+    .opt-card{min-width:260px; background:rgba(255,255,255,1); border:1px solid rgba(12,36,14,.50); border-radius:12px; overflow:hidden}
+    .opt-content{padding:12px}
+    .opt-nav{display:flex; justify-content:space-between; gap:12px; margin-top:12px}
+    .opt-btn{background:var(--blanco); color:var(--verdebg); border:1px solid rgba(12,36,14,.55); border-radius:10px; padding:8px 10px; cursor:pointer;}
+    .opt-btn:focus{outline:2px solid var(--negro)}
+   
     .tour-carousel{position:relative}
     .tour-track{display:flex; gap:16px; overflow:hidden}
     .tour-card{min-width:260px; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.1); border-radius:16px; overflow:hidden}
@@ -111,21 +125,34 @@
     form.rsvp{display:grid; gap:12px}
     .field{display:grid; gap:6px}
     input, select, textarea{
-      background:#0e0e0e; color:#fff; border:1px solid rgba(255,255,255,.2);
+      background:var(--verdebg); color:#fff; border:1px solid rgba(255,255,255,.2);
       border-radius:10px; padding:10px 12px; font-family:inherit
     }
     textarea{min-height:120px}
     .cta{display:inline-block; background:var(--verde); color:#fff; border:none; border-radius:999px; padding:10px 18px; letter-spacing:.5px; cursor:pointer}
 
     /* Separadores elegantes */
-    .divider{height:1px; background:linear-gradient(90deg, transparent, rgba(255,255,255,.25), transparent); margin:28px 0}
+    .divider{height:2px; background:linear-gradient(90deg, transparent, rgba(255,255,255,.45), transparent); margin:28px 0}
     .accent{color:var(--dorado)}
     .cursive{font-style: italic;}
 
     /* Alternar fondos sutiles para ritmo visual */
-    .on-white{background:#f5f5f5; color:#141414}
+    .on-white{background:#f5f5f5; color:var(--verdebg);}
     .on-white .card, .on-white .item{background:#ffffff; border-color:#e8e8e8}
     .on-white .icon{filter:none}
+
+    .on-paper{min-height:40dvh;background-image: var(--paper-img); background-repeat: no-repeat; background-size: cover; background-position: center;
+      background-attachment:inherit;
+      background-color:#fff; color:var(--verdebg);
+      filter: contrast(112%) brightness(101%);
+    }
+    .on-paper .card, .on-paper .item{background:#ffffff; border-color:#e8e8e8}
+    .on-paper .icon{filter:none}
+
+    .btn[href="#cuenta"] {font-family: 'Times New Roman', Times, serif;}
+    .btn[href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51767640"] {font-family: 'Times New Roman', Times, serif; border-radius:2px;}
+    .btn[href="https://www.paypal.me/africaaccesorios"] {font-family: 'Times New Roman', Times, serif; border-radius:2px;}
+
   </style>
 </head>
 <body>
@@ -146,8 +173,8 @@
       <li><a href="#wishlist">Mesa de regalos</a></li>
       <li><a href="#gastronomia">Gastronomía</a></li>
       <li><a href="#turismo">Turismo</a></li>
-      <li><a href="#hoteles">Hoteles</a></li>
-      <li><a href="#mapa">Ubicación</a></li>
+      <li><a href="#hoteles">Hospedaje</a></li>
+      <li><a href="#mapa">Venue</a></li>
       <li><a href="#rsvp">Confirmación</a></li>
     </ul>
   </nav>
@@ -160,6 +187,7 @@
       <p class="date">6 de Diciembre de 2025</p>
       <p class="chip">Luxury Garden • Tuxtla Gutiérrez, Chiapas</p><br>
       <a class="btn" href="#cuenta">Ver detalles</a>
+      
 
     </div>
   </section>
@@ -171,7 +199,7 @@
     <div class="container">
       <h2 class="title">¡El momento ha llegado!</h2>
       <p class="subtitle">Andrea me ha hecho el hombre más feliz del mundo diciendo que sí, ahora estamos preparados para unir nuestras vidas y nos emociona muchísimo que seas parte de esto.</p>
-      <p class="subtitle">¡Nos vemos muy pronto en <span class="accent">Luxury Garden</span>, Tuxtla Gutiérrez!</p>
+      <p class="subtitle">¡Te esperamos muy pronto en <span class="accent">Luxury Garden</span> para celebrar este gran día!</p>
       <div class="countdown" id="countdown">
         <div class="cd-item card"><div class="cd-num" id="cd-dias">–</div><div class="cd-label">Días</div></div>
         <div class="cd-item card"><div class="cd-num" id="cd-horas">–</div><div class="cd-label">Horas</div></div>
@@ -184,19 +212,21 @@
   <div class="divider" aria-hidden="true"></div>
 
   <!-- 3) NOMBRES DE LOS PADRES -->
-  <section id="padres" class="on-white">
+  <section id="padres" class="on-paper">
     <div class="container">
-      <h2 class="title">Sin ellos nada seria posible</h2>
-      <p class="subtitle">Por su incondicional <span class="accent">amor</span> y apoyo, a nuestros padres, nuestros heróes, mejores amigos y confidentes,
-        simplemente, ¡Gracias!.</p>
+      <h2 class="title">Sin ellos nada sería posible...</h2>
+      <p class="subtitle">Por su incondicional <span class="accent">amor</span> y apoyo; a nuestros padres, nuestros heróes, mejores amigos y confidentes,
+        simplemente: <span class="cursive">¡Gracias!</span></p>
       <div class="grid cols-2">
         <div class="card">
           <h3>Familia de Carlos</h3>
-          <p>Silma Elizabeth Moreno Espinosa • Carlos Alberto Guzman Moreno</p>
+          <p>Silma Elizabeth Moreno Espinosa</p>
+          <p>Carlos Alberto Guzmán García</p>
         </div>
         <div class="card">
           <h3>Familia de Andrea</h3>
-          <p>Yesenia Rosas Vazquez • Luis Alberto Roman Gordillo</p>
+          <p>Yesenia Rosas Vázquez</p>
+          <p>Luis Alberto Román Gordillo</p>
         </div>
       </div>
     </div>
@@ -225,21 +255,17 @@
   <div class="divider" aria-hidden="true"></div>
 
   <!-- 5) ITINERARIO -->
-  <section id="itinerario" class="on-white">
+  <section id="itinerario" class="on-paper">
     <div class="container">
       <h2 class="title">Itinerario</h2>
-      <div class="grid cols-2">
+      <div class="grid cols-1">
         <div class="card">
-          <h3>Ceremonia</h3>
           <p>18:00 — Recepción de invitados</p>
           <p>19:00 — Ceremonia</p>
-        </div>
-        <div class="card">
-          <h3>Celebración</h3>
           <p>20:00 — Presentación y baile de novios</p>
           <p>21:30 — Banquete</p>
           <p>23:00 — Tradiciones</p>
-          <p>23:30 — fiestaaaAAAaaa  \(>.<)\</p>
+          <p>23:30 — Fiesta</p>
         </div>
       </div>
     </div>
@@ -251,16 +277,20 @@
   <section id="dress">
     <div class="container">
       <h2 class="title">Dress code</h2>
-      <p class="subtitle">Etiqueta <span class="accent">(Black Tie)</span></p>
+      <p class="subtitle">Etiqueta <span class="accent">(Black Tie)</span>, colores oscuros</p>
       <div class="list cols-3">
         <div class="icon-item"><img class="icon" src="assets/icons/smoking.svg" alt="Etiqueta">
-          <div><strong>Caballeros:</strong> Traje oscuro o esmoquin, corbata/moño.</div>
+          <p><div><strong>Caballeros:</strong> Traje oscuro o esmoquin, corbata/moño, zapatos de vestir.</p>
+          <a span class="accent" href="https://pin.it/7LKf2bu9z">Inspiración</span></a>
+          </div>
         </div>
         <div class="icon-item"><img class="icon" src="assets/icons/dress.svg" alt="Vestido largo">
-          <div><strong>Damas:</strong> Vestido largo o cóctel elegante.</div>
+          <p><div><strong>Damas:</strong> Vestido largo o cóctel elegante, zapatillas de tacón grueso.</p>
+          <a span class="accent" href="https://pin.it/3wiF2InBM">Inspiración</span></a>
+          </div>
         </div>
         <div class="icon-item"><img class="icon" src="assets/icons/no-photo.svg" alt="Smoking">
-          <div><strong>Evitar:</strong> Blanco total, jeans, tenis deportivos.</div>
+          <div><strong>Evitar:</strong> Blanco total y colores relacionados (beige, hueso, amarillo pastel, dorado o plateado), mezclilla, tenis deportivos.</div>
         </div>
       </div>
     </div>
@@ -269,25 +299,36 @@
   <div class="divider" aria-hidden="true"></div>
 
   <!-- 7) SUGERENCIAS DE MAQUILLAJE (opciones de maquillistas) -->
-  <section id="maquillaje" class="on-white">
+  <section id="maquillaje" class="on-paper">
     <div class="container">
       <h2 class="title">Sugerencias de maquillaje</h2>
-      <p class="subtitle">Referencias clásicas, glow sutil y delineado elegante.</p>
-      <div class="list cols-3">
-        <div class="item">
-          <h4>Kath Redding</h4>
-          <p>Estudio de maquillaje, peinado y cejas</p>
-          <a span class="accent" href="https://www.instagram.com/kathredding.mua">Instagram</span></a>
+      <p class="subtitle">Opciones para engrandecer tu look en este gran día</p>
+      <div class="opt-carousel">
+        <div class="opt-track" id="makeupTrack">
+          <article class="opt-card">
+            <div class="opt-content"><h4>Kath Redding</h4><p>Estudio de maquillaje, peinado y cejas</p>
+            <a span class="accent" href="https://www.instagram.com/kathredding.mua">Instagram</span></a></div>
+          </article>
+          <article class="opt-card">
+            <div class="opt-content"><h4>Leandro Bruno</h4><p>Artista de maquillaje, maquillaje social</p>
+            <a span class="accent" href="https://www.instagram.com/leandrobrunomua">Instagram</span></a></div>
+          </article>
+          <article class="opt-card">
+            <div class="opt-content"><h4>Citlaly Tovilla</h4><p>Maquilladora profesional certificada, especialista en maquillaje aerógrafico</p>
+            <a span class="accent" href="https://www.instagram.com/citlalytovilla.studio">Instagram</span></a></div>
+          </article>
+          <article class="opt-card">
+            <div class="opt-content"><h4>Alfonso Real</h4><p>Artista de maquillaje, maquillaje social</p>
+            <a span class="accent" href="https://www.instagram.com/muaalfonsoreal">Instagram</span></a></div>
+          </article>
+          <article class="opt-card">
+            <div class="opt-content"><h4>Sofía Castellanos</h4><p>EMaquillaje y peinado sociales</p>
+            <a span class="accent" href="https://www.instagram.com/sophie_cast">Instagram</span></a></div>
+          </article>
         </div>
-        <div class="item">
-          <h4>Pathy Rosas Make up</h4>
-          <p>Estudio de maquillaje y peinado</p>
-          <a span class="accent" href="https://www.instagram.com/pathyrosasmakeup">Instagram</span></a>
-        </div>
-        <div class="item">
-          <h4>Valeria Maza</h4>
-          <p>Make up artist, maquillaje aerográfico, peinado, brow lamination y lashlifting</p>
-          <a span class="accent" href="https://www.instagram.com/valeriamazamakeupartist">Instagram</span></a>
+        <div class="opt-nav">
+          <button class="opt-btn" id="makeupPrev" aria-label="anterior">◀</button>
+          <button class="opt-btn" id="makeupNext" aria-label="siguiente">▶</button>
         </div>
       </div>
     </div>
@@ -299,17 +340,14 @@
   <section id="wishlist">
     <div class="container">
       <h2 class="title">Mesa de regalos</h2>
-      <div class="grid cols-3">
+      <p class="subtitle"><span class="cursive">Para nosotros tu presencia es lo más importante, pero si algo nos quieres obsequiar, nosotros lo saneamos apreciar</span></p>
+      <div class="grid cols-1">
         <div class="card">
           <h3><span class = "accent">Liverpool</span></h3>
           <p>No. Evento: 51767640</p>
-          <a class="btn" href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51767640" target="_blank" rel="noopener">Abrir mesa</a>
-        </div>
-        <div class="card">
-          <h3><span class = "accent">Amazon</span></h3>
-          <a class="btn" href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51767640" target="_blank" rel="noopener">Abrir mesa</a>
-        </div>
-        <div class="card">
+          <a class="btn" href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51767640" target="_blank" rel="noopener">Abrir mesa</a> 
+          <h3><span class = "accent">Paypal</span></h3>
+          <a class="btn" href="https://www.paypal.me/africaaccesorios" target="_blank" rel="noopener">Abrir link de regalo</a>
           <h3><span class = "accent">Datos Bancarios</span></h3>
           <p>BBVA Cuenta CLABE: 012 180 01569703850 8</p>
         </div>
@@ -320,43 +358,65 @@
   <div class="divider" aria-hidden="true"></div>
 
   <!-- 9) GASTRONOMÍA (Restaurantes típicos) -->
-  <section id="gastronomia" class="on-white">
+  <section id="gastronomia" class = "on-paper">
     <div class="container">
-      <h2 class="title">Gastronomía local</h2>
-      <p class="subtitle">Restaurantes típicos de Tuxtla Gutiérrez para el fin de semana.</p>
-      <div class="list cols-3">
-        <div class="item"><h4>Los Tamales de Chiapas</h4><p>Tamales de chipilín, bola y más.</p><span class="tag">Típico</span></div>
-        <div class="item"><h4>Las Pichanchas</h4><p>Cocina chiapaneca con espectáculo.</p><span class="tag">Folk</span></div>
-        <div class="item"><h4>La Calzada</h4><p>Parrilla & cocina regional.</p><span class="tag">Parrilla</span></div>
+      <h2 class="title">Gastronomia</h2>
+      <p class="subtitle">Descubre Chiapas a través de tu paladar, enamorate de la comida como nosotros nos hemos enamorado.</p>
+      <div class="opt-carousel">
+        <div class="opt-track" id="gastTrack">
+          <article class="opt-card">
+            <div class="opt-photo" style="background-image:url('assets/images/gastronomia-pichanchas.jpg')"></div>
+            <div class="opt-content"><h4>Las Pichanchas</h4><p>Comida tradicional chiapaneca con espectáculo.</p>
+            <a span class="accent" href="https://maps.app.goo.gl/vmNpZ3FCC3jEJzqT9">Ubicación</span></a></div>
+          </article>
+          <article class="opt-card">
+            <div class="opt-photo" style="background-image:url('assets/images/gastronomia-comision.jpg')"></div>
+            <div class="opt-content"><h4>Tacos de la comisión</h4><p>Los tradicionales tacos de cochito de Chiapas.</p>
+            <a span class="accent" href="https://maps.app.goo.gl/hNSjFr5pC1h6JiRd6">Ubicación</span></a></div>
+          </article>
+          <article class="opt-card">
+            <div class="opt-photo" style="background-image:url('assets/images/gastronomia-mechita.jpg')"></div>
+            <div class="opt-content"><h4>Tía Mechita Pro</h4><p>Botanas chiapanecas, alcohol y buen ambiente.</p>
+            <a span class="accent" href="https://maps.app.goo.gl/8yMQzmZ89zfiE7TGA">Ubicación</span></a></div>
+          </article>
+          <article class="opt-card">
+            <div class="opt-photo" style="background-image:url('assets/images/gastronomia-mayo.jpg')"></div>
+            <div class="opt-content"><h4>5 de Mayo</h4><p>Mariscos, música, sabor y tradición</p>
+            <a span class="accent" href="https://maps.app.goo.gl/4SxJMsK2SzPkTEov9">Ubicación</span></a></div>
+          </article>
+        </div>
+        <div class="opt-nav">
+          <button class="opt-btn" id="gastPrev" aria-label="anterior">◀</button>
+          <button class="opt-btn" id="gastNext" aria-label="siguiente">▶</button>
+        </div>
       </div>
     </div>
   </section>
-
   <div class="divider" aria-hidden="true"></div>
 
   <!-- 10) TURISMO (carrusel) -->
   <section id="turismo">
     <div class="container">
-      <h2 class="title">Opciones de turismo</h2>
-      <p class="subtitle">Descubre Chiapas.</p>
+      <h2 class="title">Turismo</h2>
+      <p class="subtitle">Queremos compartirte un pedacito de Chiapas, el estado que nos vio enamorarnos.</p>
       <div class="tour-carousel">
         <div class="tour-track" id="tourTrack">
           <!-- Sustituye las fotos por las tuyas -->
           <article class="tour-card">
-            <div class="tour-photo" style="background-image:url('assets/turismo-canon-sumidero.jpg')"></div>
-            <div class="tour-content"><h4>Cañón del Sumidero</h4><p>Paseo en lancha y miradores.</p></div>
+            <div class="tour-photo" style="background-image:url('assets/images/turismo-canon.jpg')"></div>
+            <div class="tour-content"><h4>Cañón del Sumidero</h4><p>Paseos en lancha y miradores.</p></div>
           </article>
           <article class="tour-card">
-            <div class="tour-photo" style="background-image:url('assets/turismo-san-cristobal.jpg')"></div>
-            <div class="tour-content"><h4>San Cristóbal</h4><p>Arquitectura colonial y artesanías.</p></div>
+            <div class="tour-photo" style="background-image:url('assets/images/turismo-sancris.jpg')"></div>
+            <div class="tour-content"><h4>San Cristóbal</h4><p>Pueblo mágico, cultura y arquitectura.</p></div>
           </article>
           <article class="tour-card">
-            <div class="tour-photo" style="background-image:url('assets/turismo-chiapa-corzo.jpg')"></div>
-            <div class="tour-content"><h4>Chiapa de Corzo</h4><p>Plaza, fuente y cocina tradicional.</p></div>
+            <div class="tour-photo" style="background-image:url('assets/images/turismo-palenque.jpg')"></div>
+            <div class="tour-content"><h4>Palenque</h4><p>Ruinas, cultura e historia.</p></div>
           </article>
           <article class="tour-card">
-            <div class="tour-photo" style="background-image:url('assets/turismo-agua-azul.jpg')"></div>
-            <div class="tour-content"><h4>Cascadas de Agua Azul</h4><p>Color turquesa inigualable.</p></div>
+            <div class="tour-photo" style="background-image:url('assets/images/turismo-cascadas.jpg')"></div>
+            <div class="tour-content"><h4>Cascadas de Agua Azul</h4><p>Paisajes naturales que te dejaran cautivado</p></div>
           </article>
         </div>
         <div class="tour-nav">
@@ -370,13 +430,16 @@
   <div class="divider" aria-hidden="true"></div>
 
   <!-- 11) HOTELES -->
-  <section id="hoteles" class="on-white">
+  <section id="hoteles" class="on-paper">
     <div class="container">
-      <h2 class="title">Opciones de hotel</h2>
+      <h2 class="title">Hospedaje</h2>
       <div class="list cols-3">
-        <div class="item"><h4>Hotel Boutique Verde</h4><p>Cerca de Luxury Garden.</p><span class="tag">Boutique</span></div>
-        <div class="item"><h4>Gran Tuxtla</h4><p>Habitaciones familiares.</p><span class="tag">Familiar</span></div>
-        <div class="item"><h4>Executive Inn</h4><p>Negocios y comodidad.</p><span class="tag">Ejecutivo</span></div>
+        <div class="card"><h4>Fiesta Inn, Ambar Fashion Mall</h4><p>Cerca del venue, una opción elegante y cómoda.</p>
+        <a span class="accent" href="https://www.fiestamericanatravelty.com/fiesta-inn/hoteles/fiesta-inn-tuxtla-fashion-mall">Reserva</span></a></div>
+        <div class="card"><h4>La Ceiba</h4><p>Una opción tradicional en un pueblo lleno de cultura.</p>
+        <a span class="accent" href="https://www.laceibahotel.com/reservaciones ">Reserva</span></a></div>
+        <div class="card"><h4>Palace Inn, Oriente</h4><p>Excelente ubicación, una gran opción para los turistas.</p>
+        <a span class="accent" href="https://www.booking.com/hotel/mx/andiroba-palace.es.html">Reserva</span></a></div>
       </div>
     </div>
   </section>
@@ -386,20 +449,22 @@
   <!-- 12) MAPA DEL VENUE -->
   <section id="mapa">
     <div class="container">
-      <h2 class="title">Mapa del venue</h2>
+      <h2 class="title">Venue</h2>
       <p class="subtitle">Luxury Garden • Tuxtla Gutiérrez, Chiapas</p>
+      <p class="subtitle"><span class="cursive">Los Ranchos, Tuxtla Gutiérrez, Chis., Tuxtla Gutiérrez, Chiapas 29090</span></p>
       <iframe class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
         src="https://www.google.com/maps?q=Luxury%20Garden%20Tuxtla%20Guti%C3%A9rrez&output=embed"></iframe>
+      <p class="subtitle"><span class="cursive"><b>Nota:</b> lleva contigo algo que abrigue, recuerda que será un evento nocturno en jardín</span></p>
     </div>
   </section>
 
   <div class="divider" aria-hidden="true"></div>
 
   <!-- 13) CONFIRMACIÓN DE ASISTENCIA (RSVP) -->
-  <section id="rsvp" class="on-white">
+  <section id="rsvp" class="on-paper">
     <div class="container">
       <h2 class="title">Confirmación de asistencia</h2>
-      <p class="subtitle">Agradecemos confirmar antes del <strong>15 de noviembre de 2025</strong>.</p>
+      <p class="subtitle">Agradecemos confirmar antes del <strong>5 de noviembre de 2025</strong>.</p>
       <form class="rsvp" onsubmit="return handleRSVP(event)">
         <div class="field">
           <label for="nombre">Nombre completo</label>
@@ -421,10 +486,6 @@
         <div class="field">
           <label for="telefono">Teléfono</label>
           <input id="telefono" name="telefono" type="tel" />
-        </div>
-        <div class="field">
-          <label for="email">Correo</label>
-          <input id="email" name="email" type="email" />
         </div>
         <div class="field">
           <label for="mensaje">Mensaje</label>
@@ -493,6 +554,37 @@
     dotsWrap.addEventListener('click', e=>{ if(e.target.classList.contains('dot')){stop(); go(+e.target.dataset.i); play();} });
 
     // Turismo carrusel (scroll por tarjetas)
+
+    const mutrack = document.getElementById('makeupTrack');
+    const mubtnPrev = document.getElementById('makeupPrev');
+    const mubtnNext = document.getElementById('makeupNext');
+    let muoffset = 0;
+    function muMove(dir){
+      const card = mutrack.querySelector('.opt-card');
+      const step = card ? card.offsetWidth + 16 : 280;
+      muoffset += dir * step;
+      const max = (mutrack.scrollWidth - mutrack.clientWidth);
+      if(muoffset < 0) muoffset = 0; if(muoffset>max) muoffset = max;
+      mutrack.scrollTo({left: muoffset, behavior:'smooth'});
+    }
+    mubtnPrev.addEventListener('click', ()=>muMove(-1));
+    mubtnNext.addEventListener('click', ()=>muMove(+1));
+
+    const gasttrack = document.getElementById('gastTrack');
+    const gastbtnPrev = document.getElementById('gastPrev');
+    const gastbtnNext = document.getElementById('gastNext');
+    let goffset = 0;
+    function gastMove(dir){
+      const card = gasttrack.querySelector('.opt-card');
+      const step = card ? card.offsetWidth + 16 : 280;
+      goffset += dir * step;
+      const max = (gasttrack.scrollWidth - gasttrack.clientWidth);
+      if(goffset < 0) goffset = 0; if(goffset>max) goffset = max;
+      gasttrack.scrollTo({left: goffset, behavior:'smooth'});
+    }
+    gastbtnPrev.addEventListener('click', ()=>gastMove(-1));
+    gastbtnNext.addEventListener('click', ()=>gastMove(+1));
+
     const track = document.getElementById('tourTrack');
     const btnPrev = document.getElementById('tourPrev');
     const btnNext = document.getElementById('tourNext');
@@ -512,12 +604,10 @@
     function handleRSVP(e){
       e.preventDefault();
       const data = Object.fromEntries(new FormData(e.target).entries());
-      const to = 'andrea.carlos.boda@example.com'; // ⇦ reemplazar
-      const subject = encodeURIComponent('RSVP — Andrea & Carlos');
       const body = encodeURIComponent(
-        `Nombre: ${data.nombre}\nAsistencia: ${data.asistencia}\nAcompañantes: ${data.invitados}\nTeléfono: ${data.telefono}\nCorreo: ${data.email}\nMensaje: ${data.mensaje}`
+        `Nombre: ${data.nombre}\nAsistencia: ${data.asistencia}\nAcompañantes: ${data.invitados}\nTeléfono: ${data.telefono}\nNotas: ${data.mensaje}`
       );
-      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+      window.location.href = `https://wa.me/5219612766603?text=${body}`;
       return false;
     }
   </script>
