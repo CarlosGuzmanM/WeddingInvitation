@@ -473,10 +473,8 @@
       <p class="subtitle">Agradecemos confirmar antes del <strong>25 de octubre de 2025</strong>.</p>
       <form class="rsvp" onsubmit="return handleRSVP(event)">
         <div class="field">
-          <label for="invitados">Número de acompañantes</label>
-          <select id="invitados" name="invitados">
-            <option>0</option><option>1</option><option>2</option><option>3+</option>
-          </select>
+          <label for="nombre">Nombre completo</label>
+          <input id="nombre" name="nombre" required />
         </div>
         <div class="field">
           <label for="asistencia">¿Asistirás?</label>
@@ -487,7 +485,7 @@
         </div>
         <div class="field">
           <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" placeholder="¿Alguna restricción alimentaria o nota?"></textarea>
+          <textarea id="mensaje" name="mensaje" placeholder="¿Alguna restricción alimentaria o nota?, Por favor haznos saber si todos tus acompañantes asistirán."></textarea>
         </div>
         <button class="cta" type="submit">Enviar confirmación</button>
       </form>
@@ -603,7 +601,7 @@
       e.preventDefault();
       const data = Object.fromEntries(new FormData(e.target).entries());
       const body = encodeURIComponent(
-        `Nombre: ${data.nombre}\nAsistencia: ${data.asistencia}\nAcompañantes: ${data.invitados}\nTeléfono: ${data.telefono}\nNotas: ${data.mensaje}`
+        `Nombre: ${data.nombre}\nAsistencia: ${data.asistencia}\nNotas: ${data.mensaje}`
       );
       window.location.href = `https://wa.me/5219612766603?text=${body}`;
       return false;
